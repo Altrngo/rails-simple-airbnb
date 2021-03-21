@@ -1,0 +1,22 @@
+<h1>View all Flats</h1>
+
+<div class="container">
+  <div class="flat_list">
+    <% @flats.each do |flat| %>
+
+      <div class="card-trip">
+        <img src="https://cf.bstatic.com/images/hotel/max1024x768/655/65571603.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= flat.name %></h2>
+            <p><%= flat.address %></p>
+          </div>
+          <h2 class="card-trip-pricing"> € <%= flat.price_per_night %></h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
